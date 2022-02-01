@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* วิชาสามัญ */
+.container-saman {
+    height: 50vh;
+    background-image: linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container-saman .countdown2 {
+    position: absolute;
+    display: flex;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container-saman .title2 {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Prompt', sans-serif;
+}
+.container-saman .countdown2 {
+    position: absolute;
+    display: flex;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.time2 {
+    padding: 2rem;
+    color: white;
+}
+.time2 h2 {
+    font-size: 64px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+}
+
+/* GAT/PAT */
+.container-gat {
+    height: 50vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.title {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Prompt', sans-serif;
+}
+.countdown {
+    position: absolute;
+    display: flex;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.time {
+    padding: 2rem;
+    color: white;
+}
+.time h2 {
+    font-size: 64px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+}
+.nowTime {
+    position: absolute;
+    top: 35%;
+    right: 3rem;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+.contact span {
+    font-size: 18px;
+}
+.contact a {
+    color: white;
+    cursor: pointer;
+    font-size: 32px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: .5s all;
+}
+
+.container-link {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(41, 41, 41);
+}
+.container-link .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.tcas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tcas a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:660px) {
+    .container-link {
+        background-color: rgb(41, 41, 41);
+    }
+    .time h2 {
+        font-size: 42px;
+    }
+    .time2 h2 {
+        font-size: 42px;
+    }
+    .container-link .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+    }
+    .nowTime {
+        right: 1rem;
+    }
+}
