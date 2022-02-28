@@ -156,3 +156,37 @@ footer {
         font-size: 25px;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .container-gat {
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 1rem;
+        color: white;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .container-saman {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 1rem;
+        color: white;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    footer {
+        padding: .5rem;
+    }
+}
