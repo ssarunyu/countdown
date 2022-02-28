@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    width: 100%;
     margin: 0;
     background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
@@ -154,39 +155,5 @@ footer {
     .contact a {
         color: black;
         font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .container-gat {
-        position: absolute;
-        top: 34%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        padding: 1rem;
-        color: white;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    .container-saman {
-        position: absolute;
-        top: 68%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        padding: 1rem;
-        color: white;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    footer {
-        padding: .5rem;
     }
 }
