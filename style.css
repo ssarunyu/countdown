@@ -10,97 +10,72 @@
 body {
     width: 100%;
     margin: 0;
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    background: url("bg.png") no-repeat fixed center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* Header */
 .container-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: .5rem;
-    margin-top: 1.5rem;
-    margin-left: 25%;
-    width: 50%;
-    border-radius: 40px;
-    background-color: white;
-}
-.logo {
-    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 30%;
+    transform: translate(-50%,-50%);
+    color: white;
 }
 /* GAT */
 .container-gat {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 45%;
+    left: 30%;
+    width: 30%;
     transform: translate(-50%,-50%);
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #222730;
     color: white;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.countdown, .countdown2 {
+.countdown, .countdown2{
     display: flex;
-}
-.time, .time2 {
-    width: 8rem;
-}
-#number {
-    font-size: 3.5rem;
-}
-.title, .title2 {
-    font-size: 32px;
     text-align: center;
 }
-.title2 {
-    font-family: 'Prompt', sans-serif;
-}
 .time, .time2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%
+}
+#number {
+    font-size: 2rem;
+}
+.title, .title2 {
+    font-family: 'Prompt', sans-serif;
 }
 
 /* 9สามัญ */
 .container-saman {
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 65%;
+    left: 30%;
+    width: 30%;
     transform: translate(-50%,-50%);
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #222730;
     color: white;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Contact */
+/* Footer */
 footer {
-    position: fixed;
-    left: 25%;
-    bottom: 1rem;
-    width: 50%;
-    padding: .5rem;
-    border-radius: 40px;
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+    width: 25%;
+    border-radius: 30px;
     background-color: white;
     color: black;
     text-align: center;
+    transform: translate(-50%,-50%);
 }
 .contact {
-    font-size: 20px;
+    font-size: 18px;
 }
 .contact a {
     color: black;
@@ -108,52 +83,40 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .logo {
-        font-size: 18px;
+    body {
+        width: 100%;
+        margin: 0;
+        background: url("bg.png") no-repeat fixed center;
     }
     .container-head {
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        transform: translate(-50%,-50%);
-        padding: 1rem;
-        margin-top: 1rem;
-        margin-left: 25%;
-        width: 80%;
-        border-radius: 20px;
-        background-color: white;
+        font-size: 12px;
+        width: 90%;
+        left: 53%;
     }
     .container-gat {
-        top: 38%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
     }
-    .title, .title2 {
-        font-size: 34px;
-        text-align: center;
+    .container-saman {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 80%;
     }
     #number {
-        font-size: 2rem;
-    }
-    .time, .time2 {
-        width: 3.5rem;
+        font-size: 1.5rem;
     }
     footer {
-        position: absolute;
         left: 50%;
-        bottom: 0;
+        bottom: 0%;
         width: 90%;
-        transform: translate(-50%,-50%);
-        padding: .5rem;
-        border-radius: 20px;
-        background-color: white;
-        color: black;
-        text-align: center;
     }
     .contact {
-        align-items: center;
-        font-size: 18px;
+        font-size: 14px;
     }
     .contact a {
-        color: black;
-        font-size: 25px;
+        font-size: 24px;
     }
 }
