@@ -146,16 +146,19 @@ footer {
           width: 50%;
       }
       .container-head {
-        width: 60%;
+        width: 50%;
         left: 30%;
       }
       .container-gat {
           width: 45%;
+          top: 50%;
       }
       .container-saman {
           width: 45%;
+          top: 75%;
       }
       footer {
           width: 50%;
+          bottom: 0;
       }
 }
