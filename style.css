@@ -155,10 +155,10 @@ footer {
       }
       .container-saman {
           width: 45%;
-          top: 65%;
+          top: 75%;
       }
       footer {
           width: 50%;
-          bottom: 10%;
+          bottom: 0;
       }
 }
