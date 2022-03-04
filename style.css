@@ -100,83 +100,62 @@ footer {
     font-size: 25px;
 }
 
-/* Small device */
-@media screen and (max-width: 426px) {
-    body {
-        width: 100%;
-        margin: 0;
-        background: url("https://media.giphy.com/media/fhAwk4DnqNgw8/giphy.gif") no-repeat fixed cover;
-    }
-    .clock {
-        text-align: center;
-        color: black;
-        font-family: 'Prompt', sans-serif;
-        padding: .7rem;
-        background-color: aliceblue;
-        width: 100%;
-        border-radius: 0px 0px 15px 15px;
-        float: right;
-    }
-    .container-head {
-        font-size: 14px;
-        width: 90%;
-        top: 26%;
-        left: 50%;
-    }
-    .container-gat {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 80%;
-    }
-    .container-saman {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        width: 80%;
-    }
-    #number {
-        font-size: 1.5rem;
-    }
-    footer {
-        left: 50%;
-        bottom: 0%;
-        width: 90%;
-    }
-    .contact {
-        font-size: 14px;
-    }
-    .contact a {
-        font-size: 24px;
-    }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) {
+        .clock {
+            width: 100%;
+        } 
+        .container-head {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            width: 90%;
+            color: white;
+            background-color: #1b2029;
+            padding: 1rem;
+            border-radius: 20px;
+        }
+        #number {
+            font-size: 2rem;
+        }
+        .container-gat {
+            width: 90%;
+            left: 50%;
+            top: 50%;
+        }
+        .container-saman {
+            width: 90%;
+            left: 50%;
+            top: 70%;
+        }
+        footer {
+            width: 90%;
+            left: 50%;
+            bottom: 2%;
+        }
 }
-
-/* Medium device */
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-    .clock {
-        text-align: center;
-        color: black;
-        font-family: 'Prompt', sans-serif;
-        padding: .7rem;
-        background-color: aliceblue;
-        width: 50%;
-        border-radius: 0px 0px 15px 15px;
-        float: right;
-    }
-    .container-head {
-        width: 50%;
-    }
-    .container-gat {
-        top: 45%;
-        width: 50%;
-    }
-    .container-saman {
-        top: 65%;
-        width: 50%;
-    }
-    footer {
-        bottom: 10%;
-        width: 40%;
-    }
+/* ----------- iPad ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+      .clock {
+          width: 50%;
+      }
+      .container-head {
+        width: 60%;
+        left: 30%;
+      }
+      .container-gat {
+          width: 45%;
+      }
+      .container-saman {
+          width: 45%;
+      }
+      footer {
+          width: 50%;
+      }
 }
-
