@@ -10,17 +10,33 @@
 body {
     width: 100%;
     margin: 0;
-    background: url("bg.png") no-repeat fixed center;
+    background: url("https://media.giphy.com/media/6XX4V0O8a0xdS/giphy.gif") no-repeat fixed center;
     background-size: cover;
 }
-
+/* Time */
+.clock {
+    text-align: center;
+    color: black;
+    font-family: 'Prompt', sans-serif;
+    padding: 1rem;
+    background-color: aliceblue;
+    width: 25%;
+    border-radius: 0px 0px 15px 15px;
+    float: right;
+}
 /* Header */
 .container-head {
     position: absolute;
     top: 25%;
     left: 30%;
-    width: 30%;
+    width: 35%;
     transform: translate(-50%,-50%);
+    color: white;
+    background-color: #1b2029;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.container-head a {
     color: white;
 }
 /* GAT */
@@ -68,30 +84,44 @@ footer {
     left: 30%;
     bottom: 10%;
     width: 25%;
-    border-radius: 30px;
-    background-color: white;
-    color: black;
+    border-radius: 20px;
+    background-color: #1b2029;
+    color: white;
     text-align: center;
     transform: translate(-50%,-50%);
 }
 .contact {
     font-size: 18px;
+    padding: 1rem;
 }
-.contact a {
-    color: black;
-    font-size: 30px;
+.contact i {
+    margin-left: 2%;
+    color: white;
+    font-size: 25px;
 }
 
-@media only screen and (max-width: 768px) {
+/* Small device */
+@media screen and (max-width: 426px) {
     body {
         width: 100%;
         margin: 0;
-        background: url("bg.png") no-repeat fixed center;
+        background: url("https://media.giphy.com/media/fhAwk4DnqNgw8/giphy.gif") no-repeat fixed cover;
+    }
+    .clock {
+        text-align: center;
+        color: black;
+        font-family: 'Prompt', sans-serif;
+        padding: .7rem;
+        background-color: aliceblue;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+        float: right;
     }
     .container-head {
-        font-size: 12px;
+        font-size: 14px;
         width: 90%;
-        left: 53%;
+        top: 26%;
+        left: 50%;
     }
     .container-gat {
         position: absolute;
@@ -101,7 +131,7 @@ footer {
     }
     .container-saman {
         position: absolute;
-        top: 75%;
+        top: 70%;
         left: 50%;
         width: 80%;
     }
@@ -120,3 +150,33 @@ footer {
         font-size: 24px;
     }
 }
+
+/* Medium device */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .clock {
+        text-align: center;
+        color: black;
+        font-family: 'Prompt', sans-serif;
+        padding: .7rem;
+        background-color: aliceblue;
+        width: 50%;
+        border-radius: 0px 0px 15px 15px;
+        float: right;
+    }
+    .container-head {
+        width: 50%;
+    }
+    .container-gat {
+        top: 45%;
+        width: 50%;
+    }
+    .container-saman {
+        top: 65%;
+        width: 50%;
+    }
+    footer {
+        bottom: 10%;
+        width: 40%;
+    }
+}
+

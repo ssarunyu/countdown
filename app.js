@@ -41,3 +41,8 @@ function countDownSaman() {
 }
 countDownSaman()
 
+const clock = document.querySelector(".clock")
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+clock.innerHTML = "วันสอบ GAT วันที่ 12-15 มีนาคม 2565<br>วันสอบวิชาสามัญ วันที่ 19-20 มีนาคม 2565"
+
+
