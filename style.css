@@ -92,7 +92,7 @@ footer {
 }
 .contact {
     font-size: 18px;
-    padding: 1rem;
+    padding: .5rem;
 }
 .contact i {
     margin-left: 2%;
@@ -136,11 +136,13 @@ footer {
             left: 50%;
             top: 75%;
         }
+        .contact {
+            padding: .5rem;
+        }
         footer {
             width: 90%;
             left: 50%;
             bottom: 0;
-            padding: .5rem;
         }
 }
 /* ----------- iPad ----------- */
