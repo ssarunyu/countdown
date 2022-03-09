@@ -140,6 +140,7 @@ footer {
             width: 90%;
             left: 50%;
             bottom: 0;
+            padding: .5rem;
         }
 }
 /* ----------- iPad ----------- */
