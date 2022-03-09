@@ -122,7 +122,7 @@ footer {
             font-size: 12px;
         }
         .title, .title2  {
-            font-size: 14px;
+            font-size: 16px;
         }
         .container-gat {
             padding: .6rem;
@@ -137,6 +137,7 @@ footer {
             top: 75%;
         }
         .contact {
+            font-size: 14px;
             padding: .5rem;
         }
         footer {
